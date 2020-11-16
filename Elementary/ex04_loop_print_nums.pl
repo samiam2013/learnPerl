@@ -4,12 +4,15 @@ use warnings;
 
 print STDOUT "A number perl can parse: ";
 my $max_num = <STDIN>;
-
+my $sum = 0;
 eval {
+
   for (1..$max_num) {
-    print STDOUT "$_\n";
+    $sum += $_;
   }
 };
 if ($@) {
-  print STDERR "there was a failure trying to print to your number.\n";
+  print STDERR "there was a failure trying to sum to your number.\n";
+} else {
+  print STDOUT "your sum number is $sum\n";
 }
