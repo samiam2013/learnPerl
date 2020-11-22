@@ -6,7 +6,6 @@ print STDOUT "A number perl can parse: ";
 my $max_num = <STDIN>;
 my $sum = 0;
 eval {
-
   for (1..$max_num) {
     $sum += $_;
   }
@@ -16,3 +15,5 @@ if ($@) {
 } else {
   print STDOUT "your sum number is $sum\n";
 }
+
+exit;

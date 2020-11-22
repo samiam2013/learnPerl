@@ -31,3 +31,4 @@ if ( $mult_or_add =~ /\+|[ad]+/gi ){
   print STDOUT "your product: $product\n";
 
 }
+exit;
