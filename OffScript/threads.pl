@@ -13,16 +13,16 @@ for my $pc (1..$proc_cnt){
   #print "forking $pc\n";
   my $child = fork();
   if ($child) { # parent
-    print STDERR "parent here\n";
+    #print STDERR "parent here\n";
     push @children, $child;
   } else {
-    print STDERR "child $pc here\n";
+    #print STDERR "child $pc here\n";
     sleep(5);
     exit;
   }
 }
 
-print STDERR Data::Dumper::Dumper(\@children);
+#print STDERR Data::Dumper::Dumper(\@children);
 
 for my $child (@children) {
   print STDERR "waiting for $child\n";
@@ -30,8 +30,3 @@ for my $child (@children) {
 }
 
 exit;
-
-sub is_prime {
-  my %args = shift @_;
-  print STDERR Data::Dumper::Dumper(\%args);
-}
