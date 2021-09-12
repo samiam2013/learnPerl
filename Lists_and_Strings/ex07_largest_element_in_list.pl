@@ -3,7 +3,8 @@ use strict;
 use warnings;
 use Data::Dumper;
 
-# 7 Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. 
+# 7 Write three functions that compute the sum of the numbers in a list: 
+#   using a for-loop, a while-loop and recursion. 
 #   (Subject to availability of these constructs in your language of choice.)
 
 my @list = (1, 4, 17, -18);
