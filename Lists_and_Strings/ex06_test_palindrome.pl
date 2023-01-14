@@ -32,9 +32,9 @@ if (is_palindrome("racecar")){
 }
 
 if (is_palindrome("abcde")){
-	print "that lady's abcde baby name is not a palindrom\n";
+	print "that lady's abcde baby name is a palindrome\n";
 } else {
-	print "go figure, abcde is not a palindrome\n";
+	print "go figure, abcde not is a palindrome\n";
 }
 
 
